@@ -12,7 +12,7 @@ def load_data():
         return []   
 def main()
     video=load_data()
-        while true:
+    while true:
         print("\n youtube Manager |choose an option  ") 
         print("1. list some favrouite videos ")
         print("2. add a video")

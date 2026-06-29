@@ -1,5 +1,9 @@
 def delete_video(videos):
     pass 
+def update_video(videos):
+    pass 
+def add_video(videos):
+    pass 
 
 
 
@@ -19,7 +23,13 @@ while true:
         case '2':
             add_video(videos)
         case '3':
-             
+            update_video(videos)
+        case '4':
+            delete_video(videos)
+        case '5':
+            break 
+        case _:
+            print("invalid choice!") 
 
 
 

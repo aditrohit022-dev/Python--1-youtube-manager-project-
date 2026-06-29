@@ -7,7 +7,7 @@ def add_video(videos):
 def load_data():
     pass
 def main()
-    video=load_data():
+    video=load_data()
         while true:
         print("\n youtube Manager |choose an option  ") 
         print("1. list some favrouite videos ")

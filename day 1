@@ -9,7 +9,10 @@ def load_data():
         with open('youtube.txt','r') as file:
             return json.load(file)
     except FileNotFoundError:
-        return []   
+        return []  
+def data_save_helper(videos):
+    with open('youtube.txt','w') as file:
+        json.dump(videos,file)
 def main()
     video=load_data()
     while true:

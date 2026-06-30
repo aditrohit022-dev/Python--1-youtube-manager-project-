@@ -4,6 +4,8 @@ def list_video(videos):
     # Added temporary pass so it doesn't crash, you can implement this later!
     print("\n--- Your Videos ---")
     for index, video in enumerate(videos, start=1):
+        print("\n") 
+        print("*"*50)
         print(f"{index}, {video['name']},{video['time']})")
 
 def delete_video(videos):

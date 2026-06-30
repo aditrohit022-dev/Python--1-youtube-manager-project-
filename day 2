@@ -15,6 +15,7 @@ def delete_video(videos):
     if 1<= index <= len(videos):
         del videos[index-1]   
         data_save_helper(videos) 
+        print("succesfuly deleted")
     else:
         print("Invalid index")
 def update_video(videos):
@@ -24,6 +25,7 @@ def update_video(videos):
         name=input("enter new name: ")
         time=input("enter new time: ")
         videos[index-1]={'name':name,'time':time} 
+        print("succesfuly updateted")
         data_save_helper(videos)  
     else:
         print("Invalid index")
@@ -31,7 +33,8 @@ def add_video(videos):
     name = input("enter video name :  ")
     time = input("enter video time :  ") 
     # Fixed: Corrected dictionary syntax inside append()
-    videos.append({"name": name, "time": time})
+    videos.append({"name": name, "time": time}) 
+    print("your video is added ! ")
     data_save_helper(videos)
 
 def load_data():

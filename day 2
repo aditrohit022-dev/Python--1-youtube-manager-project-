@@ -4,7 +4,7 @@ def list_video(videos):
     # Added temporary pass so it doesn't crash, you can implement this later!
     print("\n--- Your Videos ---")
     for index, video in enumerate(videos, start=1):
-        print(f"{index} -_- {video['name']} ({video['time']})")
+        print(f"{index}, {video['name']},{video['time']})")
 
 def delete_video(videos):
     pass 
@@ -34,11 +34,11 @@ def main():  # Fixed: Added missing colon
     videos = load_data()  # Fixed: Changed 'video' to 'videos' to match choices below
     while True:  # Fixed: Capitalized 'True'
         print("\n YouTube Manager | Choose an option  ") 
-        print("1 -_- list some favourite videos ")
+        print("1  list some favourite videos ")
         print("2. add a video")
-        print("3 -_- update a video detail ")
-        print("4 -_- delete a video")
-        print("5 -_- exit the app")
+        print("3  update a video detail ")
+        print("4  delete a video")
+        print("5  exit the app")
         choice = input("enter your choice: ")
     
         match choice: 

@@ -10,8 +10,11 @@ def list_video(videos):
         print("\n") 
         print("*"*50)
 def delete_video(videos):
-    pass
-
+    list_video(videos)
+    index=int(input("enter video idex to be deleted :"))
+    if 1<= index <= len(videos):
+        del videos[index-1]   
+        data_save_helper(videos)
 def update_video(videos):
     list_video(videos)
     index=int(input("enter video index for an update: "))

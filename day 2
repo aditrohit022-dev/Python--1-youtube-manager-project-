@@ -10,17 +10,18 @@ def list_video(videos):
         print("\n") 
         print("*"*50)
 def delete_video(videos):
-    pass 
+    pass
 
 def update_video(videos):
     list_video(videos)
     index=int(input("enter video index for an update: "))
-    if 1<= index <= len(videos)
+    if 1<= index <= len(videos):
         name=print("enter new name: ")
         time=print("enter new time: ")
     videos[index-1]={'name':name,'time':time} 
     data_save_helper(videos)  
-
+    else:
+        print("Invalid index")
 def add_video(videos):
     name = input("enter video name :  ")
     time = input("enter video time :  ") 

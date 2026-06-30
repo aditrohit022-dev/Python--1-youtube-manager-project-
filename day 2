@@ -3,11 +3,12 @@ import json  # Fixed: Added missing import
 def list_video(videos):
     # Added temporary pass so it doesn't crash, you can implement this later!
     print("\n--- Your Videos ---")
-    for index, video in enumerate(videos, start=1):
         print("\n") 
         print("*"*50)
+    for index, video in enumerate(videos, start=1):
         print(f"{index}, {video['name']},{video['time']})")
-
+        print("\n") 
+        print("*"*50)
 def delete_video(videos):
     pass 
 

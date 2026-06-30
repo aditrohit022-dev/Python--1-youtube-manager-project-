@@ -3,8 +3,8 @@ import json  # Fixed: Added missing import
 def list_video(videos):
     # Added temporary pass so it doesn't crash, you can implement this later!
     print("\n--- Your Videos ---")
-        print("\n") 
-        print("*"*50)
+    print("\n") 
+    print("*"*50)
     for index, video in enumerate(videos, start=1):
         print(f"{index}, {video['name']},{video['time']})")
         print("\n") 
@@ -21,10 +21,10 @@ def update_video(videos):
     list_video(videos)
     index=int(input("enter video index for an update: "))
     if 1<= index <= len(videos):
-        name=print("enter new name: ")
-        time=print("enter new time: ")
-    videos[index-1]={'name':name,'time':time} 
-    data_save_helper(videos)  
+        name=input("enter new name: ")
+        time=input("enter new time: ")
+        videos[index-1]={'name':name,'time':time} 
+        data_save_helper(videos)  
     else:
         print("Invalid index")
 def add_video(videos):
@@ -52,7 +52,7 @@ def main():  # Fixed: Added missing colon
         print("1  list some favourite videos: ")
         print("2. add a video :")
         print("3  update a video detail :")
-        print("4  delete a video "")
+        print("4  delete a video :")
         print("5  exit the app :")
         choice = input("enter your choice :")
     

@@ -18,7 +18,8 @@ def update_video(videos):
     if 1<= index <= len(videos)
         name=print("enter new name: ")
         time=print("enter new time: ")
-    videos[index-1]={'name':name,'time':time}
+    videos[index-1]={'name':name,'time':time} 
+    data_save_helper(videos)  
 
 def add_video(videos):
     name = input("enter video name :  ")

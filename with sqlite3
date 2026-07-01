@@ -18,7 +18,7 @@ def add_videos(name,time):
     cursor.execute("INSERT INTO videos(name,time) VALUES(?,?)",(name,time))
     cursor.commit()
 def update_videos(video_id,new_name,new_time):
-    cursor.execute("UPDATE video set name =?,time=? WHERE id=?",(new_name,new_time,video_id))
+    cursor.execute("UPDATE videos set name =?,time=? WHERE id=?",(new_name,new_time,video_id))
     cursor.commit()
 def del_videos(video_id):
     cursor.execute("DELETE FROM videos WHERE id=?",(video_id,))

@@ -3,8 +3,8 @@ conn=sqlite3.connect('youtube_videos.db')
 cursor=conn.cursor()  
 cursor.execute('''
   CREATE A TABLE IF NOT EXISTS videos(
-                id integer PRIMARY KEY 
-                name text not null
+                id integer PRIMARY KEY, 
+                name text not null,
                 time text not null
 )
 ''')

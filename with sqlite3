@@ -53,7 +53,7 @@ def main():
             video_id=input("Enter video id to delete :")
             del_videos(video_id)
             
-            del_videos()
+            
         elif choice=='5':
             break 
         else :

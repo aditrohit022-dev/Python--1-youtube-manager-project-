@@ -6,10 +6,41 @@ cursor.execute('''CREATE A TABLE IF NOT EXISTS videos(
                 name text not null
                 time text not null
 )
-
 ''')
 
-def main()
+def list_videos():
+    pass
+def add_videos():
+    pass
+def update_videos():
+    pass
+def del_videos():
+    pass
+
+def main():
+    while True:
+        print("\n youtube video maneger DB")
+        print("\n youtube video maneger DB")
+        print("1. list all videos :")
+        print("2. add videos :")
+        print("3. update vidoes :")
+        print("4. delete vidoes :")
+        print("5. Exit app!")
+        choice= input("enter your index of choice :")
+    
+        if choice == '1':
+            list_videos() 
+        elif choice=='2':
+            add_videos()
+        elif choice=='3':
+            update_videos()
+        elif choice=='4':
+            del_videos()
+        elif choice=='5':
+            break 
+        else :
+            print("Invalid index ")
+    
     
 
 if __name__==__main__:

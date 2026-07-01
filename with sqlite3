@@ -10,10 +10,13 @@ cursor.execute('''
 ''')
 
 def list_videos():
+    print("\n--- Your Videos ---")
+    print("\n") 
+    print("*"*50)
     cursor.execute("SELECT * FROM videos")
     for row in cursor.fetchall():
         print(row)
-    
+    print("*"*50)
 def add_videos(name,time):
     cursor.execute("INSERT INTO videos(name,time) VALUES(?,?)",(name,time))
     conn.commit()

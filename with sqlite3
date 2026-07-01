@@ -31,15 +31,24 @@ def main():
         if choice == '1':
             list_videos() 
         elif choice=='2':
-            add_videos()
+            name=input("Enter the video name :")
+            time=input("Enter the video time :")
+            add_videos(name,time)
         elif choice=='3':
-            update_videos()
+            video_id=input("Enter video id to update :")
+            name=input("Enter the updated video name  :")
+            time=input("Enter the updated video time :")
+            update_videos(video_id,name,time)
         elif choice=='4':
+            video_id=input("Enter video id to delete :")
+            del_videos(video_id)
+            
             del_videos()
         elif choice=='5':
             break 
         else :
             print("Invalid index ")
+    
     
     
 

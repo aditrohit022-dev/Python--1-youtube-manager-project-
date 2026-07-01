@@ -35,6 +35,9 @@ def main():
         choice= input("enter your index of choice :")
     
         if choice == '1':
+            if list_videos=="":
+                print("Currently no videos are listed!")
+            else:
             list_videos() 
         elif choice=='2':
             name=input("Enter the video name :")
